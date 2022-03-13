@@ -17,6 +17,9 @@ namespace GenericsDemo
         private static readonly string[] stringTestCase1;
         private static readonly string[] stringTestCase2;
         private static readonly string[] stringTestCase3;
+        private static MaximumNumber<int> maxInt;
+        private static MaximumNumber<float> maxFloat;
+        private static MaximumNumber<string> maxString;
         //create test case int number
         static TestCase()
     {
@@ -29,6 +32,9 @@ namespace GenericsDemo
         stringTestCase1 = new string[] { "Apple", "Banana", "Chocolate" };
         stringTestCase2 = new string[] { "Choco", "Chocolate", "Banana" };
         stringTestCase3 = new string[] { "Zoom", "Zap", "Zip" };
+            maxInt = new(intTestCase1);
+            maxFloat = new(floatTestCase1);
+            maxString = new(stringTestCase1);
         }
 
     //// Properties to get the test cases
@@ -44,29 +50,29 @@ namespace GenericsDemo
         public static void IntTest()
         {
             Console.WriteLine("Test case 1: " + GetString(intTestCase1));
-            MaximumNumber<int>.Max(intTestCase1[0], intTestCase1[1], intTestCase1[2]);
+            maxInt.Max(intTestCase1[0], intTestCase1[1], intTestCase1[2]);
             Console.WriteLine("Test case 2: " + GetString(intTestCase2));
-            MaximumNumber<int>.Max(intTestCase2[0], intTestCase2[1], intTestCase2[2]);
+            maxInt.Max(intTestCase2[0], intTestCase2[1], intTestCase2[2]);
             Console.WriteLine("Test case 3: " + GetString(intTestCase3));
-            MaximumNumber<int>.Max(intTestCase3[0], intTestCase3[1], intTestCase3[2]);
+            maxInt.Max(intTestCase3[0], intTestCase3[1], intTestCase3[2]);
         }
         public static void FloatTest()
         {
             Console.WriteLine("Test case 1: " + GetString(floatTestCase1));
-            MaximumNumber<float>.Max(floatTestCase1[0], floatTestCase1[1], floatTestCase1[2]);
+            maxFloat.Max(floatTestCase1[0], floatTestCase1[1], floatTestCase1[2]);
             Console.WriteLine("Test case 2: " + GetString(floatTestCase2));
-            MaximumNumber<float>.Max(floatTestCase2[0], floatTestCase2[1], floatTestCase2[2]);
+            maxFloat.Max(floatTestCase2[0], floatTestCase2[1], floatTestCase2[2]);
             Console.WriteLine("Test case 3: " + GetString(floatTestCase3));
-            MaximumNumber<float>.Max(floatTestCase3[0], floatTestCase3[1], floatTestCase3[2]);
+            maxFloat.Max(floatTestCase3[0], floatTestCase3[1], floatTestCase3[2]);
         }
         public static void StringTest()
         {
             Console.WriteLine("Test case 1: " + GetString(stringTestCase1));
-            MaximumNumber<string>.Max(stringTestCase1[0], stringTestCase1[1], stringTestCase1[2]);
+            maxString.Max(stringTestCase1[0], stringTestCase1[1], stringTestCase1[2]);
             Console.WriteLine("Test case 2: " + GetString(stringTestCase2));
-            MaximumNumber<string>.Max(stringTestCase2[0], stringTestCase2[1], stringTestCase2[2]);
+            maxString.Max(stringTestCase2[0], stringTestCase2[1], stringTestCase2[2]);
             Console.WriteLine("Test case 3: " + GetString(stringTestCase3));
-            MaximumNumber<string>.Max(stringTestCase3[0], stringTestCase3[1], stringTestCase3[2]);
+            maxString.Max(stringTestCase3[0], stringTestCase3[1], stringTestCase3[2]);
         }
         }
 }
