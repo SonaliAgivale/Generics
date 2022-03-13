@@ -22,6 +22,8 @@ namespace GenericsDemo
             Console.WriteLine("--------------------------------------");
             Console.WriteLine("*******Float tests*******");
             TestCase.FloatTest();
+            Console.WriteLine("*******String Test*******");
+            TestCase.StringTest();
             Console.ReadKey();
         }
     }
