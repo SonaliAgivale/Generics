@@ -12,9 +12,7 @@ namespace GenericsDemo
     private static readonly int[] intTestCase2;
     private static readonly int[] intTestCase3;
 
-    /// <summary>
-    /// Initializes the <see cref="TestCase"/> class.
-    /// </summary>
+    //create test case int number
     static TestCase()
     {
         intTestCase1 = new int[] { 5, 3, 9 };
@@ -27,10 +25,7 @@ namespace GenericsDemo
     public static int[] IntTestCase2 => intTestCase2;
     public static int[] IntTestCase3 => intTestCase3;
 
-    /// <summary>
-    /// returns the specified test case as string.
-    /// </summary>
-    /// <returns>Test case values as string</returns>
+    
     public static string GetString<T>(T[] testCase)
     {
         return $"[{testCase[0]}, {testCase[1]}, {testCase[2]}]";

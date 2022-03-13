@@ -17,5 +17,7 @@ namespace GenericsDemo
             else
                 Console.WriteLine($"Max value is: {num3}");
         }
+
+
     }
 }
