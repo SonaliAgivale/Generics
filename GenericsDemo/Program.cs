@@ -19,6 +19,9 @@ namespace GenericsDemo
             MaximumNumber.FindIntMax(TestCase.IntTestCase2[0], TestCase.IntTestCase2[1], TestCase.IntTestCase2[2]);
             Console.WriteLine("Test case 3: " + TestCase.GetString(TestCase.IntTestCase3));
             MaximumNumber.FindIntMax(TestCase.IntTestCase3[0], TestCase.IntTestCase3[1], TestCase.IntTestCase3[2]);
+            Console.WriteLine("--------------------------------------");
+            Console.WriteLine("*******Float tests*******");
+            TestCase.FloatTest();
             Console.ReadKey();
         }
     }
