@@ -17,7 +17,15 @@ namespace GenericsDemo
         {
             this.array = array;
             Array.Sort(array);
-            Console.WriteLine($"Max value is: {array[2]}");
+            PrintMax(array);
+        }
+
+        /// <summary>
+        /// Prints the maximum.
+        /// </summary>
+        private void PrintMax(T[] value)
+        {
+            Console.WriteLine($"Max value is: {value[^1]}");
         }
         //public static void FindIntMax(int num1, int num2, int num3)
         //{
